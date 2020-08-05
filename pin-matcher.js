@@ -53,11 +53,13 @@ subBtn.addEventListener('click',function(){
     if(document.getElementById('number-output').value == document.getElementById('display-pin').value)
     {
         document.getElementById('matchAlert').style.display = "block";
+        document.getElementById('mismatchAlert').style.display = "none";
     }
 
     else
     {
         document.getElementById('mismatchAlert').style.display = "block";
+        document.getElementById('matchAlert').style.display = "none";
     }
     
 })
